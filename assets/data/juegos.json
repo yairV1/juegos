@@ -1,0 +1,218 @@
+[
+  {
+    "id": 1,
+    "titulo": "Halo Infinite",
+    "descripcion": "La saga de Master Chief continúa con intensas batallas y gráficos de última generación.",
+    "plataforma": "Xbox",
+    "imagen": "../img/",
+    "precio": 59.99,
+    "valoracion": 4.8
+  },
+  {
+    "id": 2,
+    "titulo": "Forza Horizon 4",
+    "descripcion": "Explora México en el mejor simulador de carreras con paisajes impresionantes.",
+    "plataforma": "Xbox",
+    "imagen": "",
+    "precio": 49.99,
+    "valoracion": 4.9
+  },
+  {
+    "id": 3,
+    "titulo": "Gears 5",
+    "descripcion": "Acción intensa y una historia llena de giros dentro del universo Gears of War.",
+    "plataforma": "Xbox",
+    "imagen": "../img/",
+    "precio": 39.99,
+    "valoracion": 4.7
+  },
+  {
+    "id": 4,
+    "titulo": "Sea of Thieves",
+    "descripcion": "Aventura pirata cooperativa con un mundo abierto lleno de misterios.",
+    "plataforma": "Xbox",
+    "imagen": "../img/",
+    "precio": 29.99,
+    "valoracion": 4.6
+  },
+  {
+    "id": 5,
+    "titulo": "FIFA 25",
+    "descripcion": "Vive la emoción del fútbol con gráficos realistas y modos en línea mejorados.",
+    "plataforma": "Xbox",
+    "imagen": "../img/",
+    "precio": 59.99,
+    "valoracion": 4.5
+  },
+  {
+    "id": 6,
+    "titulo": "Call of Duty: Modern Warfare III",
+    "descripcion": "Combate moderno con campañas y multijugador de alto nivel.",
+    "plataforma": "PC",
+    "imagen": "../img/",
+    "precio": 69.99,
+    "valoracion": 4.9
+  },
+  {
+    "id": 7,
+    "titulo": "Cyberpunk 2077",
+    "descripcion": "RPG futurista ambientado en Night City, lleno de acción y decisiones morales.",
+    "plataforma": "PC",
+    "imagen": "../img/",
+    "precio": 49.99,
+    "valoracion": 4.2
+  },
+  {
+    "id": 8,
+    "titulo": "Red Dead Redemption 2",
+    "descripcion": "Vive la historia de Arthur Morgan en un Oeste lleno de detalles y realismo.",
+    "plataforma": "PC",
+    "imagen": "",
+    "precio": 59.99,
+    "valoracion": 4.9
+  },
+  {
+    "id": 9,
+    "titulo": "Valorant",
+    "descripcion": "Shooter táctico competitivo con personajes y habilidades únicas.",
+    "plataforma": "PC",
+    "imagen": "../img/",
+    "precio": 0,
+    "valoracion": 4.7
+  },
+  {
+    "id": 10,
+    "titulo": "League of Legends",
+    "descripcion": "El MOBA más popular del mundo, con partidas estratégicas y campeones variados.",
+    "plataforma": "PC",
+    "imagen": "../img/",
+    "precio": 0,
+    "valoracion": 4.6
+  },
+  {
+    "id": 11,
+    "titulo": "Minecraft",
+    "descripcion": "Construye, explora y sobrevive en un mundo de bloques infinito.",
+    "plataforma": "PC",
+    "imagen": "../img/",
+    "precio": 26.99,
+    "valoracion": 4.8
+  },
+  {
+    "id": 12,
+    "titulo": "The Witcher 3: Wild Hunt",
+    "descripcion": "Aventura épica de rol con una historia profunda y mundo abierto.",
+    "plataforma": "PC",
+    "imagen": "",
+    "precio": 39.99,
+    "valoracion": 4.9
+  },
+  {
+    "id": 13,
+    "titulo": "Counter-Strike 2",
+    "descripcion": "El clásico shooter competitivo, renovado con el motor Source 2.",
+    "plataforma": "PC",
+    "imagen": "../img/",
+    "precio": 0,
+    "valoracion": 4.8
+  },
+  {
+    "id": 14,
+    "titulo": "Elden Ring",
+    "descripcion": "Desafíos, jefes épicos y un mundo inmenso creado por FromSoftware.",
+    "plataforma": "PC",
+    "imagen": "../img/",
+    "precio": 59.99,
+    "valoracion": 4.9
+  },
+  {
+    "id": 15,
+    "titulo": "Fortnite",
+    "descripcion": "El popular battle royale con eventos en vivo y construcción creativa.",
+    "plataforma": "PC",
+    "imagen": "",
+    "precio": 0,
+    "valoracion": 4.5
+  },
+  {
+    "id": 16,
+    "titulo": "PUBG Mobile",
+    "descripcion": "Batallas intensas en línea con 100 jugadores y gráficos realistas.",
+    "plataforma": "Mobile",
+    "imagen": "../img/",
+    "precio": 0,
+    "valoracion": 4.6
+  },
+  {
+    "id": 17,
+    "titulo": "Call of Duty Mobile",
+    "descripcion": "Dispara y compite en el legendario COD adaptado a móviles.",
+    "plataforma": "Mobile",
+    "imagen": "../img/",
+    "precio": 0,
+    "valoracion": 4.7
+  },
+  {
+    "id": 18,
+    "titulo": "Genshin Impact",
+    "descripcion": "Explora un vasto mundo lleno de magia y aventuras.",
+    "plataforma": "Mobile",
+    "imagen": "../img/",
+    "precio": 0,
+    "valoracion": 4.8
+  },
+  {
+    "id": 19,
+    "titulo": "Clash Royale",
+    "descripcion": "Combina cartas y estrategia para derrotar a tus enemigos en tiempo real.",
+    "plataforma": "Mobile",
+    "imagen": "",
+    "precio": 0,
+    "valoracion": 4.5
+  },
+  {
+    "id": 20,
+    "titulo": "Asphalt 9: Legends",
+    "descripcion": "Carreras arcade espectaculares con autos de lujo y escenarios impresionantes.",
+    "plataforma": "Mobile",
+    "imagen": "../img/",
+    "precio": 0,
+    "valoracion": 4.6
+  },
+  {
+    "id": 21,
+    "titulo": "Among Us",
+    "descripcion": "Juego de deducción social y diversión en grupo.",
+    "plataforma": "Mobile",
+    "imagen": "../img/",
+    "precio": 0,
+    "valoracion": 4.3
+  },
+  {
+    "id": 22,
+    "titulo": "Brawl Stars",
+    "descripcion": "Batallas rápidas de 3v3 con personajes únicos y modos variados.",
+    "plataforma": "Mobile",
+    "imagen": "../img/",
+    "precio": 0,
+    "valoracion": 4.6
+  },
+  {
+    "id": 23,
+    "titulo": "Free Fire",
+    "descripcion": "Sobrevive en combates de 50 jugadores en este battle royale móvil.",
+    "plataforma": "Mobile",
+    "imagen": "../img/",
+    "precio": 0,
+    "valoracion": 4.4
+  },
+  {
+    "id": 24,
+    "titulo": "Pokemon GO",
+    "descripcion": "Explora el mundo real mientras capturas Pokémon en tu entorno.",
+    "plataforma": "Mobile",
+    "imagen": "../img/",
+    "precio": 0,
+    "valoracion": 4.7
+  }
+]
