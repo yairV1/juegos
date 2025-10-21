@@ -4,7 +4,7 @@
     "titulo": "Halo Infinite",
     "descripcion": "La saga de Master Chief continúa con intensas batallas y gráficos de última generación.",
     "plataforma": "Xbox",
-    "imagen": "../img/",
+    "imagen": "../index/img/halo.infiniti.webp",
     "precio": 59.99,
     "valoracion": 4.8
   },
@@ -202,7 +202,7 @@
     "titulo": "Free Fire",
     "descripcion": "Sobrevive en combates de 50 jugadores en este battle royale móvil.",
     "plataforma": "Mobile",
-    "imagen": "../img/",
+    "imagen": "../index/img/fre free.jpg",
     "precio": 0,
     "valoracion": 4.4
   },

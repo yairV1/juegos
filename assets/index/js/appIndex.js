@@ -1,64 +1,45 @@
-// 🎮 Mostrar juegos dentro de la sección "catalogo"
+// app.js
+// Módulo responsable de interactividad y placeholder para animación 3D.
+// Cuando quieras integrar Three.js, lo haremos aquí.
 
-document.addEventListener("DOMContentLoaded", () => {
-  const contenedorJuegos = document.getElementById("contenedor-juegos");
-  const filtroPlataforma = document.getElementById("filtro-plataforma");
+const btnToggle = document.getElementById('btn-toggle');
+const mainNav = document.querySelector('.main-nav');
 
-  // Función principal: cargar los datos del JSON
-  const cargarJuegos = async () => {
-    try {
-      fetch("../../assets/data/juegos.json");
-      const datos = await respuesta.json();
-      mostrarJuegos(datos.juegos);
-      configurarFiltro(datos.juegos);
-    } catch (error) {
-      console.error("Error al cargar los juegos:", error);
-      contenedorJuegos.innerHTML = `<p class="text-danger text-center mt-5">Error al cargar los juegos. Intenta nuevamente.</p>`;
-    }
-  };
-
-  // Mostrar juegos en el contenedor
-  const mostrarJuegos = (lista) => {
-    contenedorJuegos.innerHTML = "";
-    lista.forEach((juego) => {
-      const card = document.createElement("div");
-      card.classList.add("col-md-4", "col-lg-3", "mb-4", "fade-in");
-
-      card.innerHTML = `
-        <div class="card h-100 shadow-sm border-0 bg-dark text-light game-card">
-          <img src="${juego.imagen}" class="card-img-top" alt="${juego.titulo}">
-          <div class="card-body d-flex flex-column justify-content-between">
-            <div>
-              <h5 class="card-title text-success">${juego.titulo}</h5>
-              <p class="card-text small text-secondary">${juego.descripcion}</p>
-            </div>
-            <div class="mt-3">
-              <span class="badge bg-success me-2">${juego.plataforma}</span>
-              <p class="fw-bold mt-2">$${juego.precio.toFixed(2)}</p>
-              <p class="text-warning mb-1">⭐ ${juego.valoracion}</p>
-              <button class="btn btn-outline-success w-100 mt-2">Ver más</button>
-            </div>
-          </div>
-        </div>
-      `;
-      contenedorJuegos.appendChild(card);
-    });
-  };
-
-  // Filtro por plataforma
-  const configurarFiltro = (lista) => {
-    filtroPlataforma.addEventListener("change", (e) => {
-      const seleccion = e.target.value;
-      if (seleccion === "todos") {
-        mostrarJuegos(lista);
-      } else {
-        const filtrados = lista.filter(
-          (juego) => juego.plataforma.toLowerCase() === seleccion.toLowerCase()
-        );
-        mostrarJuegos(filtrados);
-      }
-    });
-  };
-
-  cargarJuegos();
+btnToggle?.addEventListener('click', () => {
+  const isOpen = mainNav.style.display === 'block';
+  mainNav.style.display = isOpen ? '' : 'block';
 });
+
+// Ajustar canvas al tamaño de la ventana (placeholder)
+const canvas = document.getElementById('hero-canvas');
+if (canvas) {
+  const ctx = canvas.getContext('2d');
+  function resizeCanvas(){
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+    drawPlaceholder();
+  }
+  function drawPlaceholder(){
+    if (!ctx) return;
+    // degradado sutil para que parezca "fondo dinámico"
+    const g = ctx.createLinearGradient(0,0,canvas.width,canvas.height);
+    g.addColorStop(0,'rgba(12,6,30,0.8)');
+    g.addColorStop(1,'rgba(2,8,20,0.5)');
+    ctx.fillStyle = g;
+    ctx.fillRect(0,0,canvas.width,canvas.height);
+
+    // algunas partículas suaves (no costosas)
+    for (let i=0;i<80;i++){
+      const x = Math.random()*canvas.width;
+      const y = Math.random()*canvas.height;
+      const r = Math.random()*1.5+0.2;
+      ctx.beginPath();
+      ctx.fillStyle = 'rgba(255,255,255,' + (Math.random()*0.06) + ')';
+      ctx.arc(x,y,r,0,Math.PI*2);
+      ctx.fill();
+    }
+  }
+
+  window.addEventListener('resize', resizeCanvas);
+  resizeCanvas();
+}
