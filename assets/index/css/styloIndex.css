@@ -123,12 +123,14 @@ html, body {
   border-radius: var(--radius);
   font-weight: 600;
   transition: var(--transition);
+  text-decoration: none;
 }
 
 .btn-ghost {
   border: 1px solid rgba(255, 255, 255, 0.15);
   background: transparent;
   color: var(--color-muted);
+  text-decoration: none;
 }
 
 .btn-ghost:hover {
