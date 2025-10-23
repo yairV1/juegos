@@ -1,4 +1,6 @@
 // main-auth.js (VERSIÓN ROBUSTA y COMPATIBLE)
+console.log("✅ login.js cargado correctamente desde access/login/js/");
+console.log("➡ Redirigiendo a ../../../webSite/dashboard.html");
 document.addEventListener('DOMContentLoaded', () => {
   const safeQuery = (selectors) => {
     for (const s of selectors) {
@@ -182,7 +184,7 @@ document.addEventListener('DOMContentLoaded', () => {
       console.log('Login exitoso:', found);
       alert(`Bienvenido ${found.name}!`);
       // redirigir
-      window.location.href = '../webSite/dashboard.html';
+      window.location.href = window.location.origin + '/webSite/dashboard.html';
     });
   } else {
     console.info('No se encontró formulario de login en la página.');
@@ -237,3 +239,5 @@ document.addEventListener('DOMContentLoaded', () => {
     })();
   }
 });
+console.log(window.location.href);
+
