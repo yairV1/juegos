@@ -182,7 +182,7 @@ document.addEventListener('DOMContentLoaded', () => {
       console.log('Login exitoso:', found);
       alert(`Bienvenido ${found.name}!`);
       // redirigir
-      window.location.href = 'dashboard.html';
+      window.location.href = '../webSite/dashboard.html';
     });
   } else {
     console.info('No se encontró formulario de login en la página.');
