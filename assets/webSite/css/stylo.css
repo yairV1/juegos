@@ -1,0 +1,150 @@
+/* === VARIABLES === */
+:root {
+--color-bg: #0f0f1a;
+--color-card: #1a1a2e;
+--color-accent: #00e0ff;
+--color-accent-hover: #00b8d9;
+--color-text: #ffffff;
+--color-muted: #a0a0a0;
+--transition: 0.3s ease;
+--radius: 15px;
+--shadow: 0 0 15px rgba(0, 224, 255, 0.3);
+}
+
+/* === RESET === */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  }
+
+body {
+background: var(--color-bg);
+color: var(--color-text);
+font-family: "Poppins", sans-serif;
+min-height: 100vh;
+}
+
+/* === NAVBAR === */
+.navbar {
+border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.navbar-brand {
+color: var(--color-accent) !important;
+font-size: 1.5rem;
+text-shadow: 0 0 8px var(--color-accent);
+}
+
+/* === INPUT BUSCAR === */
+#buscar {
+background: #1f1f2e;
+border: none;
+color: var(--color-text);
+border-radius: var(--radius);
+padding: 0.6rem 1rem;
+}
+
+#buscar::placeholder {
+color: var(--color-muted);
+}
+
+#buscar:focus {
+outline: none;
+box-shadow: 0 0 8px var(--color-accent);
+}
+
+/* === TARJETAS DE JUEGOS === */
+.card-juego {
+background: var(--color-card);
+border: none;
+border-radius: var(--radius);
+overflow: hidden;
+transition: var(--transition);
+box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+}
+
+.card-juego:hover {
+transform: translateY(-6px) scale(1.03);
+box-shadow: var(--shadow);
+}
+
+.card-juego img {
+width: 100%;
+height: 220px;
+object-fit: cover;
+transition: transform 0.4s ease;
+}
+
+.card-juego:hover img {
+transform: scale(1.1);
+}
+
+.card-body {
+padding: 1rem;
+}
+
+.card-title {
+font-weight: 700;
+color: var(--color-text);
+}
+
+.card-text {
+color: var(--color-muted);
+}
+
+.btn-ver {
+background: var(--color-accent);
+color: #000;
+border: none;
+font-weight: bold;
+padding: 0.5rem 1rem;
+border-radius: var(--radius);
+transition: var(--transition);
+}
+
+.btn-ver:hover {
+background: var(--color-accent-hover);
+box-shadow: 0 0 10px var(--color-accent);
+}
+
+/* === MODAL === */
+.modal-content {
+background: var(--color-card);
+color: var(--color-text);
+border-radius: var(--radius);
+}
+
+#modalImagen {
+border-radius: var(--radius);
+box-shadow: 0 0 15px rgba(0, 224, 255, 0.2);
+}
+
+.text-accent {
+color: var(--color-accent);
+}
+
+/* === FOOTER === */
+footer {
+color: var(--color-muted);
+font-size: 0.9rem;
+}
+
+/* === MODO CLARO OPCIONAL === */
+body.light-mode {
+--color-bg: #f4f4f4;
+--color-card: #ffffff;
+--color-text: #1a1a1a;
+--color-muted: #555;
+--color-accent: #0077ff;
+--color-accent-hover: #005ecc;
+--shadow: 0 0 15px rgba(0, 119, 255, 0.3);
+}
+
+body.light-mode .navbar {
+background: #ffffff !important;
+}
+body.light-mode #buscar {
+background: #e0e0e0;    
+}
